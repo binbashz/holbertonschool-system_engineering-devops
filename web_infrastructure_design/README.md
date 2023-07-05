@@ -1,4 +1,4 @@
-### Web infrastructure design
+# Web infrastructure design
 
 
 
@@ -94,3 +94,22 @@ Splitting Components Across Separate Servers: Separating the components onto the
 Isolation: Isolating components enhances security and reduces the impact of failures or performance issues in one component on the others.
 Scalability: Each component can be scaled independently based on its specific requirements. For example, if the application server requires more resources, only that server needs to be scaled.
 Modularity: Splitting components allows for easier maintenance, updates, and troubleshooting, as changes made to one component are less likely to impact others.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+```
+
+##### Also keep in mind when we look at the whiteboard diagram
+
+the server is located in a data center
+the server can be physical or virtual
+the server run an OS
+the web server's role is to server web pages (static content)
+an application server's role is to compute dynamic content
+the data base's role is to store application data
+is an a record because its resolves to an IP adress
+the server is an single point to faiulre because nothing is redundant
+the website would be temporarily down when code is deployed and the web server needs to be restarted
+this infrastructure cannot scale and will not be able to handle traffic that would exceed the server capacity
+```
