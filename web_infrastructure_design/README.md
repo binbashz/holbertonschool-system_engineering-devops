@@ -144,7 +144,7 @@ Servers with identical components increase the risk of widespread failure if a v
 
 
 ### task 03 Scale up
-
+```
 ## Application server vs web server
 Requirements:
 
@@ -154,6 +154,7 @@ You must add:
 Split components (web server, application server, database) with their own server
 You must be able to explain some specifics about this infrastructure:
 For every additional element, why you are adding it
+```
 
 
 ##### Application Server vs. Web Server:
