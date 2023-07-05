@@ -1,4 +1,8 @@
-task 0
+### Web infrastructure design
+
+
+
+task 0 - 0. ## Simple web stack
 
 The domain name www.foobar.com that the user enters in his browser to access the website is displayed at the top.
 
@@ -17,7 +21,7 @@ Finally, the response is sent back to the web server and then to the user, who v
 
 
 
-task 01
+task 01 ## Distributed web infrastructure
 
 I successfully designed a three-server web infrastructure on a whiteboard for hosting the website www.foobar.com. The infrastructure includes 2 servers, 1 web server (Nginx), 1 application server, 1 load balancer (HAProxy), 1 set of application files (code base), and 1 database (MySQL).
 
@@ -39,7 +43,7 @@ No Monitoring: The infrastructure lacks monitoring, making it challenging to tra
 
 
 
-task 02
+task 02  ## Secured and monitored web infrastructure
 
 The task is to design a secure and monitored three-server web infrastructure on a whiteboard for hosting the website www.foobar.com. The requirements include adding three firewalls, implementing SSL encryption for HTTPS traffic, and incorporating three monitoring clients.
 
@@ -63,3 +67,16 @@ Servers with identical components increase the risk of widespread failure if a v
 
 
 ![IMG3](https://github.com/binbashz/holbertonschool-system_engineering-devops/assets/124454895/de2a0f8b-3733-4c1c-a0e9-b2d8119c6155)
+
+
+task 03 Scale up
+
+## Application server vs web server
+Requirements:
+
+You must add:
+1 server
+1 load-balancer (HAproxy) configured as cluster with the other one
+Split components (web server, application server, database) with their own server
+You must be able to explain some specifics about this infrastructure:
+For every additional element, why you are adding it
