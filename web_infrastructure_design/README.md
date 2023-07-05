@@ -173,10 +173,9 @@ Modularity: Splitting components allows for easier maintenance, updates, and tro
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
+
+ #### Also keep in mind when we look at the whiteboard diagram
 ```
-
-##### Also keep in mind when we look at the whiteboard diagram
-
 the server is located in a data center
 the server can be physical or virtual
 the server run an OS
