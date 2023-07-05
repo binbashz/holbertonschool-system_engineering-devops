@@ -90,6 +90,13 @@ Single Point of Failure (SPOF): The infrastructure lacks redundancy, which could
 Security Issues: The infrastructure lacks a firewall and HTTPS, exposing it to potential unauthorized access and leaving communications unencrypted. Implementing a firewall and enabling HTTPS is necessary for enhanced security.
 No Monitoring: The infrastructure lacks monitoring, making it challenging to track health, performance, and availability. Monitoring is crucial for detecting issues and ensuring timely troubleshooting and maintenance.
 
+
+```
+if the load balancer is configured to have an active-active or active-passive setup
+the load balancer is stilla sigle pint of failure
+traffic is unecrypted
+no monitoring
+```
 ![img 2](https://github.com/binbashz/holbertonschool-system_engineering-devops/assets/124454895/d1b81be8-3b8e-4dc8-964b-4f91bf84b5bc)
 
 
@@ -139,7 +146,24 @@ Terminating SSL at the load balancer level can introduce security risks due to t
 Having only one MySQL server capable of accepting writes creates a single point of failure.
 Servers with identical components increase the risk of widespread failure if a vulnerability affects one component.
 
+```
+Firewall filters network traffic in and out machine
+HTTPS is setuo so that if someone intercepts the traffic , it cannot be read
+monitoring can be used to check something is broken or slow
+the monitoring setup is composed of a client collecting data and sending it to the monitoring system
+Configure monitoring to:
 
+collect web server data
+have an alert triggered if QPS is getting out of control
+
+Terminating SSL at the load balancer level is an issue because the traffic between the load balancer and the web servers is unencrypted
+MySQL server capable of accepting writes is an issue because if the master goes down, the application cannot write to the database anymore
+
+Having servers with all the same components (database, web server and application server) might be a problem because their consumption will not grow the same way between each of them (we might want to have more database servers than application servers for instance).
+
+Having servers with all the same components (database, web server and application server) might be a problem because when there is maintenance performed on a server for a specific component, it will affect other components that are on it
+Load-balancer is a SPOF
+```
 ![IMG3](https://github.com/binbashz/holbertonschool-system_engineering-devops/assets/124454895/de2a0f8b-3733-4c1c-a0e9-b2d8119c6155)
 
 
