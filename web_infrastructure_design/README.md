@@ -21,7 +21,7 @@ Finally, the response is sent back to the web server and then to the user, who v
 
 
 
-task 01 ## Distributed web infrastructure
+### task 01  Distributed web infrastructure
 
 I successfully designed a three-server web infrastructure on a whiteboard for hosting the website www.foobar.com. The infrastructure includes 2 servers, 1 web server (Nginx), 1 application server, 1 load balancer (HAProxy), 1 set of application files (code base), and 1 database (MySQL).
 
@@ -82,7 +82,7 @@ You must be able to explain some specifics about this infrastructure:
 For every additional element, why you are adding it
 
 
-Application Server vs. Web Server:
+##### Application Server vs. Web Server:
 
 Web Server: A web server is responsible for handling HTTP requests from clients (such as web browsers) and delivering static content, such as HTML, CSS, and images, to the clients. It serves as the intermediary between the client and the application server, handling the initial processing and routing of requests.
 Application Server: An application server executes the application's business logic and generates dynamic content. It processes requests received from the web server, interacts with databases or other services, and generates responses to be sent back to the web server for delivery to the client.
