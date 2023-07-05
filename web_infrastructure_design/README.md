@@ -12,6 +12,7 @@ The application server can interact with the database (MySQL) to obtain or store
 
 Finally, the response is sent back to the web server and then to the user, who views the website in his browser.
 
+![imagen web](https://github.com/binbashz/holbertonschool-system_engineering-devops/assets/124454895/9360137f-b512-44eb-9915-161b91f6ddf0)
 
 
 
@@ -33,6 +34,7 @@ Single Point of Failure (SPOF): The infrastructure lacks redundancy, which could
 Security Issues: The infrastructure lacks a firewall and HTTPS, exposing it to potential unauthorized access and leaving communications unencrypted. Implementing a firewall and enabling HTTPS is necessary for enhanced security.
 No Monitoring: The infrastructure lacks monitoring, making it challenging to track health, performance, and availability. Monitoring is crucial for detecting issues and ensuring timely troubleshooting and maintenance.
 
+![img 2](https://github.com/binbashz/holbertonschool-system_engineering-devops/assets/124454895/d1b81be8-3b8e-4dc8-964b-4f91bf84b5bc)
 
 
 
@@ -60,3 +62,4 @@ Having only one MySQL server capable of accepting writes creates a single point 
 Servers with identical components increase the risk of widespread failure if a vulnerability affects one component.
 
 
+![IMG3](https://github.com/binbashz/holbertonschool-system_engineering-devops/assets/124454895/de2a0f8b-3733-4c1c-a0e9-b2d8119c6155)
