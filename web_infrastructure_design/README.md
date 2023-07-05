@@ -2,7 +2,7 @@
 
 
 
-#### task 0 - 0.  Simple web stack
+#### task 0   Simple web stack
 
 The domain name www.foobar.com that the user enters in his browser to access the website is displayed at the top.
 
