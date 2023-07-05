@@ -2,7 +2,7 @@
 
 
 
-task 0 - 0. ## Simple web stack
+#### task 0 - 0.  Simple web stack
 
 The domain name www.foobar.com that the user enters in his browser to access the website is displayed at the top.
 
@@ -43,7 +43,7 @@ No Monitoring: The infrastructure lacks monitoring, making it challenging to tra
 
 
 
-task 02  ## Secured and monitored web infrastructure
+### task 02   Secured and monitored web infrastructure
 
 The task is to design a secure and monitored three-server web infrastructure on a whiteboard for hosting the website www.foobar.com. The requirements include adding three firewalls, implementing SSL encryption for HTTPS traffic, and incorporating three monitoring clients.
 
@@ -69,7 +69,7 @@ Servers with identical components increase the risk of widespread failure if a v
 ![IMG3](https://github.com/binbashz/holbertonschool-system_engineering-devops/assets/124454895/de2a0f8b-3733-4c1c-a0e9-b2d8119c6155)
 
 
-task 03 Scale up
+### task 03 Scale up
 
 ## Application server vs web server
 Requirements:
@@ -80,3 +80,17 @@ You must add:
 Split components (web server, application server, database) with their own server
 You must be able to explain some specifics about this infrastructure:
 For every additional element, why you are adding it
+
+
+Application Server vs. Web Server:
+
+Web Server: A web server is responsible for handling HTTP requests from clients (such as web browsers) and delivering static content, such as HTML, CSS, and images, to the clients. It serves as the intermediary between the client and the application server, handling the initial processing and routing of requests.
+Application Server: An application server executes the application's business logic and generates dynamic content. It processes requests received from the web server, interacts with databases or other services, and generates responses to be sent back to the web server for delivery to the client.
+Additional Elements and Their Significance:
+
+Server: The server is added to provide the hardware and resources necessary to host the infrastructure components. It serves as the foundation for running the web server, application server, and database.
+Load Balancer (HAproxy) Configured as a Cluster: The load balancer is added to distribute incoming traffic evenly across multiple servers to improve performance, scalability, and fault tolerance. Configuring it as a cluster ensures redundancy and high availability.
+Splitting Components Across Separate Servers: Separating the components onto their own servers provides several benefits, including:
+Isolation: Isolating components enhances security and reduces the impact of failures or performance issues in one component on the others.
+Scalability: Each component can be scaled independently based on its specific requirements. For example, if the application server requires more resources, only that server needs to be scaled.
+Modularity: Splitting components allows for easier maintenance, updates, and troubleshooting, as changes made to one component are less likely to impact others.
