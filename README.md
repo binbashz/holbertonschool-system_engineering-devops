@@ -28,3 +28,4 @@ Cover what the requirements mention, we will explore details in a later project
 Keep in mind that you will have 30 minutes to perform the exercise, you will get points for what is asked in requirements
 Similarly in a job interview, you should answer what the interviewer asked for, be careful about being too verbose - always ask the interviewer if going into details is necessary -
 speaking too much can play against you
+
